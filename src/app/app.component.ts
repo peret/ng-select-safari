@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-select-safari';
+  selectedOption: number | null = null;
+
+  options = [
+    { id: 1, name: 'The page jumped to the top' },
+    { id: 2, name: 'The page did not jump to the top' },
+  ]
 }

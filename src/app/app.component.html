@@ -2,8 +2,8 @@
 <div style="height: 100vh"></div>
 <label for="">Use Safari and click here to reproduce:</label>
 
-<select>
-  <option></option>
-  <option>The page jumped to the top</option>
-  <option>The page did not jump to the top</option>
-</select>
+<ng-select [items]="options"
+           bindLabel="name"
+           bindValue="id"
+           [(ngModel)]="selectedOption">
+</ng-select>
